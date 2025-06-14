@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Father's Day Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #cbe4f9, #e0f7ff);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 350px;
+      text-align: center;
+      position: relative;
+    }
+
+    .heart {
+      font-size: 40px;
+      color: #57c5f7;
+      animation: pulse 1.5s infinite;
+      margin-bottom: 10px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #2c3e50;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #4d6a79;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #7f8c8d;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 100px;
+      height: 100px;
+      background: #d1eeff;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 120px;
+      height: 120px;
+      background: #b3e5fc;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💖</div>
+    <h1>Happy Father's Day!!</h1>
+    <p>Happy Father's Day to the best dad ever! You make me laugh every day, and I'm so lucky to have you!</p>
+    <div class="footer">With all my love - Elisa</div>
+  </div>
+</body>
+</html>
